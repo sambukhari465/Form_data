@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 24</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      section{
+        margin: auto;
+      }
+      .contact-form {
+        width: 45%;
+        margin:auto;
+      }
+
+      .contact-form input {
+        width: 50%;
+        margin-top: 10px;
+        background-color: #f2f2f2;
+        padding: 6px 0px 6px 10px;
+        border: none;
+      }
+
+      .contact-form textarea {
+        border: none;
+        margin: 10px 0px 10px 0px;
+        padding: 6px 0px 10px 10px;
+        background-color: #f2f2f2;
+      }
+
+      .contact-form button {
+        padding: 3px 6px 3px 6px;
+        background-color: #db545a;
+        color: #fff;
+        border: none;
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="contact">
+        <form action="/formPost" method="post" class="contact-form">
+            <h2>CONTACT FORM</h2>
+            <input type="text" name="name" placeholder="Enter your Name" />
+            <input type="text" name="email" placeholder="Enter a valid email address" />
+            <textarea name="message" id="" cols="51" rows="4" placeholder="Enter your message"></textarea>
+            <button type="submit">SUBMIT</button>
+          </form>  
+    </section>
+  </body>
+</html>
